@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>{{ page.title }} - IRC DevDocs</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link rel="stylesheet" href="/assets/styles/index.css">
     <link rel="stylesheet" href="/assets/styles/foundation.css">
@@ -23,7 +23,14 @@
             <span class="logo-text">ircdocs<span class="logo-part">.horse</span></span>
         </a>
 
-        <nav class="desktop-nav">
+        <nav class="desktop-nav category-nav">
+            <a href="{{ site.baseurl | relative_url }}refs/commands/">commands</a>
+            <a href="{{ site.baseurl | relative_url }}refs/numerics/">numerics</a>
+            <!-- <a href="/">guides</a> -->
+            <a href="{{ site.baseurl | relative_url }}refs/glossary/">glossary</a>
+        </nav>
+
+        <nav class="desktop-nav ircdocs-nav">
             <a href="https://ircdocs.horse/">index</a>
             <a class="active" href="/">DevDocs</a>
             <a href="https://defs.ircdocs.horse/">Defs</a>
@@ -39,6 +46,11 @@
         <nav id="header-mobile-nav">
             <div class="close-sidebar" role="button" aria-label="Close mobile nav menu button" onclick="document.getElementById('header-mobile-nav').classList.toggle('shown')"><i class="fas fa-times"></i></div>
             <div class="link-container">
+                <a href="{{ site.baseurl | relative_url }}refs/commands/">commands</a>
+                <a href="{{ site.baseurl | relative_url }}refs/numerics/">numerics</a>
+                <!-- <a href="/">guides</a> -->
+                <a href="{{ site.baseurl | relative_url }}refs/glossary/">glossary</a>
+                <p>&nbsp;</p>
                 <a href="https://ircdocs.horse/">index</a>
                 <a class="active" href="/">DevDocs</a>
                 <a href="https://defs.ircdocs.horse/">Defs</a>
@@ -56,7 +68,6 @@
 </div>
 
 <footer>
-    <!-- <a href="/"><img class="logo-img" src="/assets/irc_logos/irc_white.svg" alt="IRC Foundation Logo"></a> -->
     <p>&copy; 2018 <a href="https://irc.com/">IRC.com</a></p>
     <p>&copy; 2020 ircdocs</p>
 </footer>

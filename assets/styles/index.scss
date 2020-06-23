@@ -1,27 +1,14 @@
 ---
 ---
 
-$comHeaderColour: #78d5e4;
 $foundationHeaderColour: #aac7ec;
-$socialHeaderColour: #74a8cb;
 
 header, header .header-dropdown-menu, footer, .full-width-page-header, .full-width-search-bar {
     background-color: #2a3135;
 }
-header .logo-part, header .desktop-nav a:hover {
-    color: $comHeaderColour;
-}
 .full-width-page-header, .full-width-search-bar {
     color: #fff;
     background: #314157;
-}
-body.index {
-    header .logo-part, header .desktop-nav a:hover {
-        color: $socialHeaderColour;
-    }
-    .full-width-page-header, .full-width-search-bar {
-        color: #fff;
-    }
 }
 body.foundation {
     header .logo-part, header .desktop-nav a:hover, header .desktop-nav a.active {
@@ -60,6 +47,7 @@ header, footer {
     height: 100%;
 }
 
+// css reset
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
     margin: 0;
     padding: 0;
@@ -183,6 +171,11 @@ header {
             flex: 1 1 auto;
             text-align: right;
 
+            &.category-nav {
+                padding: 0 2em;
+                text-align: left;
+            }
+
             a {
                 transition: color 0.2s;
                 color: #fff;
@@ -239,7 +232,6 @@ header {
             display: none;
             color: #fff;
             text-align: right;
-            width: 100%;
             flex: 1 1 auto;
             font-size: 1.4em;
             padding: 0.3em 0 0.3em 0.3em;
@@ -301,6 +293,7 @@ header {
                 display: block;
                 text-align: center;
                 padding: 0.25em 0;
+                text-transform: uppercase;
             }
             hr {
                 border: none;
@@ -309,11 +302,11 @@ header {
         }
     }
 
-    @media (max-width: 35rem) {
+    @media (max-width: 65rem) {
         .mobile-nav-button {
             display: inline-block !important;
         }
-        .desktop-nav {
+        .ircdocs-nav {
             display: none;
         }
         #header-mobile-nav {
@@ -321,6 +314,11 @@ header {
             &.shown {
                 left: 0;
             }
+        }
+    }
+    @media (max-width: 35rem) {
+        .desktop-nav {
+            display: none;
         }
     }
 }
