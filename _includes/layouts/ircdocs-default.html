@@ -24,10 +24,11 @@
         </a>
 
         <nav class="desktop-nav category-nav">
-            <a href="{{ site.baseurl | relative_url }}refs/commands/">commands</a>
-            <a href="{{ site.baseurl | relative_url }}refs/numerics/">numerics</a>
+            {% assign current = page.path | downcase | split: '/' %}
+            <a {% if current[1] == 'commands' %}class="active"{% endif %} href="{{ site.baseurl | relative_url }}refs/commands/">commands</a>
+            <a {% if current[1] == 'numerics' %}class="active"{% endif %} href="{{ site.baseurl | relative_url }}refs/numerics/">numerics</a>
             <!-- <a href="/">guides</a> -->
-            <a href="{{ site.baseurl | relative_url }}refs/glossary/">glossary</a>
+            <a {% if current[1] == 'glossary' %}class="active"{% endif %} href="{{ site.baseurl | relative_url }}refs/glossary/">glossary</a>
         </nav>
 
         <nav class="desktop-nav ircdocs-nav">
