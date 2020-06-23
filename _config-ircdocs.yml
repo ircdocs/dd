@@ -1,0 +1,37 @@
+# mode is either dev or prod
+mode: dev
+
+# baseurl for dev is the root
+baseurl: '/'
+
+# Files/Folders to exclude from the final output
+exclude:
+  - .sass-cache
+  - CNAME
+  - config.rb
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - CONTRIBUTING.md
+
+compress_html:
+  clippings: []
+  comments: ["<!-- ", " -->"]
+  endings: []
+  ignore:
+    envs: [local]
+  blanklines: true
+  profile: false
+  startings: []
+
+sass:
+  sass_dir: css
+
+permalink: none
+
+highlighter: rouge
+markdown: kramdown
+
+ghcommit: "https://github.com/ircdocs/dd/commit/"
+ghrepo: "https://github.com/ircdocs/dd/blob/master/"

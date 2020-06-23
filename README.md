@@ -1,22 +1,22 @@
-# IRC Foundation Developer Docs
-This set of documentation is hosted by the IRC Foundation, describing the IRC (Internet Relay Chat) protocol in detail. The docs here are written to give developers a good footing when writing software that uses or interacts with IRC.
+# IRC Developer Docs
+This set of documentation describes the IRC (Internet Relay Chat) protocol. The docs are written to give developers a good footing when writing software that uses or interacts with IRC.
 
 This documentation takes on a lot of structure from something like the [MDN Web Docs](https://developer.mozilla.org/en-US/), which documents web technology instead.
 
 
 ## Building
-Primarily, these docs are meant to be plugged into the proper IRC Foundation website. However, when developing that's irritating to do so instead we support building the site in two different modes – `dev` and `prod`.
+The `dev` and `prod` config files are remnants of an old use case for these docs – the `ircdocs` config file is what we use to build the site.
 
-In `dev` mode, the site will build a basic browsable version that can be viewed through the server that Jekyll sets up. In `prod` mode, what's output is instead the HTML and files that get plugged into the Foundation site.
+In the `ircdocs` and `dev` modes, the site will build a basic browsable version that can be viewed through the server that Jekyll sets up. In `prod` mode, what's output is instead the HTML and files that get plugged into other sites more cleanly.
 
-**dev**
+**when writing docs**
 ```sh
-bundle exec jekyll serve -w --config _config-dev.yml
+bundle exec jekyll serve -w --config _config-ircdocs.yml
 ```
 
-**prod**
+**building**
 ```sh
-bundle exec jekyll b --config _config-prod.yml
+bundle exec jekyll b --config _config-ircdocs.yml
 ```
 
 
@@ -43,7 +43,7 @@ Some stuff I want to describe very explicitly in future include:
 Here are some other IRC references that devs may find useful:
 
 - [IRCv3 Working Group](https://ircv3.net/)
-- [ircdocs](http://ircdocs.horse/)
+- [ircdocs](http://ircdocs.horse/) generally
 
 
 ## What can I do with this?
