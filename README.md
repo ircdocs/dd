@@ -51,4 +51,4 @@ Here are some other IRC references that devs may find useful:
 The project's [license file](./LICENSE) lays this out in detail, but as a non-normative summary we've designed the license so that:
 
 - If anyone modifies or builds on top of the content in this repo, we can pull those changes back into this project under this project's license.
-- If IRC.com / the IRC Foundation or anyone else wants to take any of the content in this repo and pull it into the IETF process (for example, writing a new RFC describing the IRC protocol), they can do that and the content they use will be under the IETF contributor license terms.
+- If anyone wants to take any of the content in this repo and pull it into the IETF process (for example, writing a new RFC describing the IRC protocol), they can do that and the content they use will be under the IETF contributor license terms.

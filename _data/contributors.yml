@@ -3,9 +3,8 @@ people:
     name: Daniel Oaks
     github: DanielOaks
     twitter: Daniel_Oaks
-    email: daniel+devdocs@irc.com
-    tagline: Lead protocol docs maintainer
-    nick: dan- / doaks
+    tagline: Lead DevDocs maintainer
+    nick: dan- &nbsp;doaks
     orgs:
       - irccom
       - ircdocs

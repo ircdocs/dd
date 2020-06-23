@@ -1,5 +1,5 @@
 ---
-title: IRC Foundation Testing Tools
+title: IRC Testing Tools
 layout: short-header
 ntitle: Tools
 nsub: Resources and tools we use to test IRC software
@@ -8,24 +8,18 @@ nsub: Resources and tools we use to test IRC software
     <div class="col-sm-3 col-xs-12 sidebar">
         <div class="docs-list-sidebar">
             <div class="docs-list-sidebar">
-                <h4><a href="#foundation">Foundation Tools</a></h4>
-                <h4><a href="#external">External Tools</a></h4>
+                <!-- <h4><a href="#foundation">Foundation Tools</a></h4>
+                <h4><a href="#external">External Tools</a></h4> -->
             </div>
         </div>
     </div>
     <div class="col-sm-9 col-xs-12 main-content">
         <div class="docs-list-content content">
-            <h2><div class="docs-list-linker" id="foundation"></div><a href="#foundation">Foundation Tools</a></h2>
-            <p>These are tools that we've written to help us write this documentation.</p>
-
-            <h3><a href="https://hub.docker.com/u/irccom">Docker Images</a></h3>
+            <h3><a href="https://hub.docker.com/u/irccom">IRC Server Docker Test Images</a></h3>
             <p>We host a series of Docker images <a href="https://hub.docker.com/u/irccom">available here</a> (source <a href="https://github.com/irccom/test-servers">here</a>) with different IRC server software running. These images are setup with consistent configurations, oper credentials, and port numbers to speed-up testing.</p>
 
-            <h3><a href="https://github.com/irccom/script-runner">Script Runner</a></h3>
+            <h3><a href="https://github.com/irccom/script-runner">Test Script Runner</a></h3>
             <p>We've written an IRC script runner <a href="https://github.com/irccom/script-runner">available here</a> which makes it simple to run a set of commands and actions across different IRC servers, then output a file for easy comparison between the tested servers.</p>
-
-            <h2><div class="docs-list-linker" id="external"></div><a href="#external">External Tools</a></h2>
-            <p>These are tools written by others in the IRC community, which we also make use of.</p>
 
             <h3><a href="https://github.com/ircdocs/parser-tests">Parser Tests</a></h3>
             <p>The set of test files <a href="https://github.com/ircdocs/parser-tests">available here</a> let developers test IRC parsers and uncover areas where they do not parse (particularly complicated or edge-case) messages or incoming lines correctly.</p>

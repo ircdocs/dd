@@ -33,14 +33,14 @@ shortlist:
     url: https://www.dal.net/?page=Bahamut
     desc: |
       Being written by and for [DALnet](https://www.dal.net/), Bahamut is a very stable IRC
-      server that doesn't follow newer standards.
+      server.
 
   - id: ratbox
     name: ircd-ratbox
     url: https://www.ratbox.org
     desc: |
       Being well-used on [EFnet](http://www.efnet.org/), ircd-ratbox is a stable and fast
-      IRC server that doesn't follow newer standards.
+      IRC server.
 
   - id: ngircd
     name: ngIRCd
@@ -53,8 +53,7 @@ shortlist:
     name: ircu2
     url: http://coder-com.undernet.org
     desc: |
-      Developed by and for the Undernet community, ircu2 is relatively well-used and does
-      not follow newer standards.
+      Developed by and for the Undernet community, ircu2 is relatively well-used.
 
   - id: hybrid
     name: ircd-hybrid
@@ -68,5 +67,5 @@ shortlist:
     url: http://www.irc.org/servers.html
     desc: |
       The original IRC server, IRCd spawned a number of the servers listed here. Not
-      maintained today and having spawned the (in)famous RFC2812, we list the compatibility
-      of this server mostly for context and historical interest.
+      maintained today, we list the compatibility of this server mostly for context and
+      historical interest.

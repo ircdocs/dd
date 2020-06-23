@@ -1,5 +1,5 @@
-# Contributing to the IRC Foundation Developer Docs
-Welcome to the Foundation's developer documentation! Thank you very much for taking the time to contribute, it's always good to have more eyes looking at (and editing) these pages.
+# Contributing to the IRC DevDocs
+Welcome to IRC DevDocs! Thank you very much for taking the time to contribute, it's always good to have more eyes looking at (and editing) these pages.
 
 This page lists a set of guidelines and advice to simplify contributing to this project, and to (in the case of submitted changes) make it more likely that we'll accept your changes.
 
@@ -31,7 +31,7 @@ Alright, let's go through each type of change:
 ### New Reference Page
 This is documenting a new command, numeric, or mode. We always appreciate new contributions, however there are some checks that we do due to the somewhat fragmented nature of IRC support out there.
 
-If you're documenting a numeric, discuss your change with us on the [issue tracker](https://github.com/irccom/devdocs/issues). Specifically, tell us the number and the name of the numeric you're looking to describe. For example, something like:
+If you're documenting a numeric, discuss your change with us on the [issue tracker](https://github.com/ircdocs/dd/issues). Specifically, tell us the number and the name of the numeric you're looking to describe. For example, something like:
 
 > **RPL_HELLO (020)**
 >
