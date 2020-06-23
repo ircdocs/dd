@@ -40,7 +40,7 @@ irc-terms:
     description: |
       This describes the period from when a user connects, to when the `RPL_WELCOME` `(001)` numeric and burst is sent to them. In other words, it begins when they connect and finishes when they are fully connected to the server and can use all regular commands.
 
-      It should be noted that 'registration' here **does not** refer to IRC account registration (such as through NickServ or SASL). Here, 'registration' means the user setting up their connection and connection details (such as nickname, username, and capabilities) with the server.
+      'Registration' here **does not** refer to IRC account registration (such as through NickServ). Here, 'registration' means the user connecting to the server and setting their initial details (nickname, ident, capabilities, etc).
 
       During the connection registration period, most commands cannot be used, and certain commands act differently.
 
@@ -60,13 +60,14 @@ irc-terms:
   #   description: |
   #     This can mean either the character before someone's name in a channel (e.g. `@`/`+`), or the first part of the IRC message framing (prefixed by a colon).
 
+# terms used in irc software development
+irc-dev-terms:
   # "Friends":
   #   description: |
   #     Server software sometimes has to send messages to all clients that a given user is in channels with. This group of users can be called that client's 'friends'.
+      
   #     For example, if the `dan` and `jeff` clients are joined to `#chan1`, and `dan` and `tiff` are joined to `#chan2`, then in protocol terms the `jeff` and `tiff` clients are the `dan` client's 'friends'.
 
-# terms used in irc software development
-irc-dev-terms:
-  "Silent":
+  "Silent Command":
     description: |
-      In command documentation, we use the term 'silent' to mean that the command, if successful, sends no response to the user. For example, the `NICK` command, when used during connection registration, is silent as the command itself sends no response when successful.
+      We use the term 'silent command' to mean that the command, if successful, sends no response to the user. For example, the `NICK` command, when used during connection registration, is a silent command because it sends no response when successful.
