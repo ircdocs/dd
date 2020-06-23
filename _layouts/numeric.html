@@ -97,6 +97,18 @@ layout: short-header-num
                 </a>
                 {% endfor %}
             </div>
+
+            <h3><div id="commands" class="header-link-expander"></div><a href="#commands" class="internal-link">Related Commands<i class="fas fa-link"></i></a></h3>
+            <ul>
+            {% for cmd in page.commands %}
+                {% if site.data.commands.info[cmd] %}
+                <li><a href="../commands/{{ cmd | slugify }}"><code>{{ cmd }}</code></a></li>
+                {% else %}
+                <li><code class="nocolor grey">{{ cmd }}</code></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+
             <hr>
             {% if page.contributors %}
             <div class="contributors">

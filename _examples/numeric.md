@@ -9,6 +9,10 @@ numeric-groups:
     - appropriate
     - groups
     - here
+# commands that return this numeric
+numerics:
+    - MOTD
+    - JOIN
 
 examples:
     - desc: First example
