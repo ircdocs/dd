@@ -24,11 +24,17 @@ body.index {
     }
 }
 body.foundation {
-    header .logo-part, header .desktop-nav a:hover {
+    header .logo-part, header .desktop-nav a:hover, header .desktop-nav a.active {
         color: $foundationHeaderColour;
     }
     .full-width-page-header, .full-width-search-bar {
         color: #fff;
+    }
+    footer a {
+        color: $foundationHeaderColour;
+        &:hover {
+            color: saturate(darken($foundationHeaderColour, 10%), 5%);
+        }
     }
 }
 
@@ -44,6 +50,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll; // always show scrollbar
 }
 header, footer {
     flex: 0 0 auto;
@@ -146,6 +153,7 @@ header {
     z-index: 10;
     width: 100%;
     top: 0;
+    border-bottom: 0.1em solid #22282b;
 
     .container {
         display: flex;
@@ -153,7 +161,7 @@ header {
 
         a.logo {
             flex: 0 0 auto;
-            font-size: 1.8em;
+            font-size: 1.3em;
             font-weight: 500;
             color: #fff;
             text-decoration: none;
