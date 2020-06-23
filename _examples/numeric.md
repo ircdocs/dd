@@ -10,7 +10,7 @@ numeric-groups:
     - groups
     - here
 # commands that return this numeric
-numerics:
+commands:
     - MOTD
     - JOIN
 
