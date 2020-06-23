@@ -1,7 +1,7 @@
-# mode is either dev or prod
-mode: dev
+# mode is either ircdocs or bare
+mode: ircdocs
 
-# baseurl for dev is the root
+# baseurl is the root
 baseurl: '/'
 
 # Files/Folders to exclude from the final output

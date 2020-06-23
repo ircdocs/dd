@@ -5,9 +5,7 @@ This documentation takes on a lot of structure from something like the [MDN Web 
 
 
 ## Building
-The `dev` and `prod` config files are remnants of an old use case for these docs – the `ircdocs` config file is what we use to build the site.
-
-In the `ircdocs` and `dev` modes, the site will build a basic browsable version that can be viewed through the server that Jekyll sets up. In `prod` mode, what's output is instead the HTML and files that get plugged into other sites more cleanly.
+The `ircdocs` config file creates the main site. The `bare` config file exports the pages without headers/footers and is used when plugging the content into other sites.
 
 **when writing docs**
 ```sh

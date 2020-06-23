@@ -1,8 +1,8 @@
-# mode is either dev or prod
-mode: dev
+# mode is either ircdocs or bare
+mode: bare
 
-# baseurl for dev is the root
-baseurl: '/'
+# baseurl is where they'll be accessed
+baseurl: '/devdocs'
 
 # Files/Folders to exclude from the final output
 exclude:
@@ -14,6 +14,8 @@ exclude:
   - README.md
   - vendor
   - CONTRIBUTING.md
+  - index.html
+  - assets
 
 compress_html:
   clippings: []
@@ -33,5 +35,6 @@ permalink: none
 highlighter: rouge
 markdown: kramdown
 
+pregit: true  # pre-process to add git file times and commit ids
 ghcommit: "https://github.com/irccom/devdocs/commit/"
 ghrepo: "https://github.com/irccom/devdocs/blob/master/"
